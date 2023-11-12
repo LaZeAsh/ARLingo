@@ -7,6 +7,7 @@ struct ARLingoView: View {
     let textColor = Color.white
 
     var body: some View {
+        @ObservedObject var userChoice = UserChoice(language: "francais")
         NavigationView {
             ZStack {
                 // Use the indigo color for the entire screen background
@@ -26,7 +27,7 @@ struct ARLingoView: View {
                     Text("Discover languages through the world around you.")
                         .font(.title3)
                         .fontWeight(.medium)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                     // Object Recognition Button
@@ -47,7 +48,7 @@ struct ARLingoView: View {
                     .padding(.horizontal, 30)
                     
                     // Language Selection Button
-                    NavigationLink(destination: ChoicesView(), label: {
+                    NavigationLink(destination: ChoicesView().environmentObject(userChoice), label: {
                         HStack {
                             Image(systemName: "globe")
                                 .foregroundColor(iconColor)
@@ -76,5 +77,7 @@ struct ARLingoView_Previews: PreviewProvider {
         ARLingoView()
     }
 }
+
+
 
 // Custom Color Extension already defined in previous example

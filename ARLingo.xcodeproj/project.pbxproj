@@ -15,6 +15,7 @@
 		5EC09D7A2B00611A0091287F /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC09D792B00611A0091287F /* Selection.swift */; };
 		5EC09D7C2B0061570091287F /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC09D7B2B0061570091287F /* Title.swift */; };
 		5EC09D7E2B0066AB0091287F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC09D7D2B0066AB0091287F /* Camera.swift */; };
+		5EC09D802B008E4D0091287F /* UserChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC09D7F2B008E4D0091287F /* UserChoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5EC09D792B00611A0091287F /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		5EC09D7B2B0061570091287F /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		5EC09D7D2B0066AB0091287F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		5EC09D7F2B008E4D0091287F /* UserChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC09D792B00611A0091287F /* Selection.swift */,
+				5EC09D7F2B008E4D0091287F /* UserChoice.swift */,
 				5EC09D632B0028110091287F /* AppDelegate.swift */,
 				5EC09D7D2B0066AB0091287F /* Camera.swift */,
 				5EC09D7B2B0061570091287F /* Title.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC09D7C2B0061570091287F /* Title.swift in Sources */,
+				5EC09D802B008E4D0091287F /* UserChoice.swift in Sources */,
 				5EC09D7A2B00611A0091287F /* Selection.swift in Sources */,
 				5EC09D7E2B0066AB0091287F /* Camera.swift in Sources */,
 				5EC09D662B0028110091287F /* ContentView.swift in Sources */,
