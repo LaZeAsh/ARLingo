@@ -29,11 +29,8 @@ struct ARLingoView: View {
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
-
                     // Object Recognition Button
-                    Button(action: {
-                        // Handle object recognition action
-                    }) {
+                    NavigationLink(destination: Camera(), label: {
                         HStack {
                             Image(systemName: "camera.viewfinder")
                                 .foregroundColor(iconColor)
@@ -46,13 +43,11 @@ struct ARLingoView: View {
                         .background(buttonColor) // Use the adjusted button color
                         .foregroundColor(textColor)
                         .cornerRadius(15)
-                    }
+                    })
                     .padding(.horizontal, 30)
-
+                    
                     // Language Selection Button
-                    Button(action: {
-                        // Handle language selection action
-                    }) {
+                    NavigationLink(destination: ChoicesView(), label: {
                         HStack {
                             Image(systemName: "globe")
                                 .foregroundColor(iconColor)
@@ -65,9 +60,8 @@ struct ARLingoView: View {
                         .background(buttonColor) // Use the adjusted button color
                         .foregroundColor(textColor)
                         .cornerRadius(15)
-                    }
+                    })
                     .padding(.horizontal, 30)
-
                     Spacer()
                 }
                 .navigationBarTitle("ARLingo", displayMode: .large)
