@@ -2,7 +2,7 @@ import XCTest
 
 class TranslationServiceTests: XCTestCase {
 
-    var translationService: TranslationService! // Assuming you have a TranslationService class
+    var translationService: TranslationService!
 
     override func setUp() {
         super.setUp()
@@ -16,7 +16,7 @@ class TranslationServiceTests: XCTestCase {
 
     func testObjectTranslation() {
         // Test case for object translation
-        let objectName = "Table" // Sample object name to test translation
+        let objectN = "Table" // Sample object name to test translation
         let targetLanguage = "Spanish" // Sample target language for translation
         
         let expectation = self.expectation(description: "Translation expectation")
